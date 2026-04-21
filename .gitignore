@@ -173,3 +173,33 @@ outputs/
 
 # Dev folders
 .cache/*
+
+### GitHub / local machine / secrets (forks & personal clones) ###
+# Extra env files (keep `.env.example` committed if you use one)
+.env.local
+.env.*.local
+
+# Credentials & keys (never commit)
+secrets/
+secret/
+credentials.json
+credentials*.json
+service_account*.json
+*.pem
+id_rsa
+id_ed25519
+*.p12
+*.pfx
+
+# Local experiment / export dumps (if not under outputs/)
+runs/
+lightning_logs/
+tensorboard/
+
+# OS / editor (extra)
+.AppleDouble
+.directory
+*.sublime-*
+
+# Optional: uncomment to ignore Cursor workspace metadata (keep `.cursor/rules` if you use shared rules)
+# .cursor/
